@@ -24,7 +24,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Header */
         header {
             background: #fff;
             padding: 1rem 5%;
@@ -50,7 +49,6 @@
             font-weight: 500;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
             padding: 100px 5% 80px;
@@ -86,7 +84,6 @@
             transform: translateY(-2px);
         }
 
-        /* Features Section */
         .section {
             padding: 80px 5%;
         }
@@ -116,7 +113,6 @@
             margin-bottom: 20px;
         }
 
-        /* How to Use Area */
         .steps {
             max-width: 900px;
             margin: 0 auto;
@@ -142,7 +138,6 @@
             flex-shrink: 0;
         }
 
-        /* Footer */
         footer {
             background: var(--secondary-color);
             color: #fff;
@@ -160,10 +155,9 @@
             margin: 0 10px;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h1 { font-size: 1.8rem; }
-            nav { display: none; } /* シンプル化のためスマホではナビ非表示 */
+            nav { display: none; }
         }
     </style>
 </head>
@@ -180,9 +174,10 @@
 
     <section class="hero">
         <h1>「読む」から「聴く」へ。<br>Web小説をあなたの専属読師に。</h1>
-        <p>TSS (Text to Speak Shosetu) は、Web小説を自然な音声で読み上げるブラウザ拡張機能です。家事、通勤、リラックスタイムを物語の時間に変えましょう。</p>
-        <a href="https://tss-extension.github.io/TSS---Text-to-Speak-Shosetu/" class="cta-button">
-            <i class="fab fa-chrome"></i> 今すぐインストール（無料）
+        <p>TSS (Text to Speak Shosetu) は、Web小説を自然な音声で読み上げるブラウザ拡張機能です。</p>
+        
+        <a href="https://github.com/TSS-extension/TSS---Text-to-Speak-Shosetu/releases" class="cta-button" target="_blank">
+            <i class="fab fa-github"></i> 最新版をダウンロード (GitHub)
         </a>
     </section>
 
@@ -194,17 +189,17 @@
             <div class="feature-card">
                 <i class="fas fa-volume-up"></i>
                 <h3>自然な読み上げ</h3>
-                <p>最新のブラウザ音声エンジンを採用。速度やピッチを自由に調整し、あなた好みの声で再生できます。</p>
+                <p>最新のブラウザ音声エンジンを採用。速度やピッチを自由に調整可能です。</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-forward"></i>
                 <h3>自動ページ送り</h3>
-                <p>次のエピソードへ自動で移動。スマホを操作することなく、長編小説もハンズフリーで楽しめます。</p>
+                <p>次のエピソードへ自動移動。長編小説もハンズフリーで楽しめます。</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-magic"></i>
                 <h3>シンプル操作</h3>
-                <p>小説のページ上に浮かぶ操作パネルで、再生・停止をワンタップ。デザインを邪魔しません。</p>
+                <p>小説のページ上に浮かぶ操作パネルで、再生・停止をワンタップ。</p>
             </div>
         </div>
     </section>
@@ -217,41 +212,33 @@
             <div class="step">
                 <div class="step-num">1</div>
                 <div>
-                    <strong>インストール：</strong>
-                    Chromeウェブストアから拡張機能を追加します。
+                    <strong>ダウンロード：</strong>
+                    GitHubのReleasesページから最新のパッケージをダウンロードします。
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
                 <div>
                     <strong>小説を開く：</strong>
-                    「小説家になろう」や「カクヨム」など、対応サイトの作品ページへ移動します。
+                    対応サイト（小説家になろう等）の作品ページへ移動します。
                 </div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
                 <div>
-                    <strong>再生する：</strong>
-                    画面に表示される再生ボタンを押すだけで、読み上げが始まります。
+                    <strong>再生：</strong>
+                    画面に表示されるコントロールパネルから再生を開始します。
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="sites">
-        <div class="section-title">
-            <h2>対応サイト</h2>
-            <p>小説家になろう / カクヨム / ハーメルン など、順次拡大中！</p>
-        </div>
-    </section>
-
     <footer>
         <div class="footer-links">
-            <a href="https://github.com/tss-extension/TSS---Text-to-Speak-Shosetu">GitHub</a>
+            <a href="https://github.com/TSS-extension/TSS---Text-to-Speak-Shosetu">GitHub Project</a>
             <a href="#">プライバシーポリシー</a>
-            <a href="#">お問い合わせ</a>
         </div>
-        <p>&copy; 2024 TSS Project. All Rights Reserved.</p>
+        <p>&copy; 2024 TSS Project.</p>
     </footer>
 
 </body>
