@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSS - Text to Speak Shosetu | Web小説を聴こう</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-light: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 100px 5% 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #666;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .cta-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .section {
+            padding: 80px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        /* How to Use Area */
+        .steps {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .step-num {
+            background: var(--primary-color);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: #fff;
+            text-align: center;
+            padding: 40px 5%;
+        }
+
+        .footer-links {
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            nav { display: none; } /* シンプル化のためスマホではナビ非表示 */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TSS</div>
+        <nav>
+            <a href="#features">特徴</a>
+            <a href="#how-to-use">使い方</a>
+            <a href="#sites">対応サイト</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>「読む」から「聴く」へ。<br>Web小説をあなたの専属読師に。</h1>
+        <p>TSS (Text to Speak Shosetu) は、Web小説を自然な音声で読み上げるブラウザ拡張機能です。家事、通勤、リラックスタイムを物語の時間に変えましょう。</p>
+        <a href="https://tss-extension.github.io/TSS---Text-to-Speak-Shosetu/" class="cta-button">
+            <i class="fab fa-chrome"></i> 今すぐインストール（無料）
+        </a>
+    </section>
+
+    <section class="section" id="features">
+        <div class="section-title">
+            <h2>主な特徴</h2>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-volume-up"></i>
+                <h3>自然な読み上げ</h3>
+                <p>最新のブラウザ音声エンジンを採用。速度やピッチを自由に調整し、あなた好みの声で再生できます。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-forward"></i>
+                <h3>自動ページ送り</h3>
+                <p>次のエピソードへ自動で移動。スマホを操作することなく、長編小説もハンズフリーで楽しめます。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-magic"></i>
+                <h3>シンプル操作</h3>
+                <p>小説のページ上に浮かぶ操作パネルで、再生・停止をワンタップ。デザインを邪魔しません。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="how-to-use" style="background-color: var(--bg-light);">
+        <div class="section-title">
+            <h2>使い方</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                    <strong>インストール：</strong>
+                    Chromeウェブストアから拡張機能を追加します。
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                    <strong>小説を開く：</strong>
+                    「小説家になろう」や「カクヨム」など、対応サイトの作品ページへ移動します。
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>
+                    <strong>再生する：</strong>
+                    画面に表示される再生ボタンを押すだけで、読み上げが始まります。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="sites">
+        <div class="section-title">
+            <h2>対応サイト</h2>
+            <p>小説家になろう / カクヨム / ハーメルン など、順次拡大中！</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/tss-extension/TSS---Text-to-Speak-Shosetu">GitHub</a>
+            <a href="#">プライバシーポリシー</a>
+            <a href="#">お問い合わせ</a>
+        </div>
+        <p>&copy; 2024 TSS Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
